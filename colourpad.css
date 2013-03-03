@@ -1,0 +1,160 @@
+ /*
+ 
+ ,---.     |                                 |
+ |    ,---.|    ,---..   .,---.,---.,---.,---|
+ |    |   ||    |   ||   ||    |   |,---||   |
+ `---'`---'`---'`---'`---'`    |---'`---^`--
+                               |    
+ * @project:	CSS Framework
+ * @version:	2.3 #Foxglove - 01/02/2012
+ * @author:		Craig Thomas - www.colourpad.com
+ * @project:	www.tinybigideas.com/web-applications/colourpad-css-framework/
+ * @license:	Colourpad CSS Framework by Craig Thomas is licensed under a Open Source Initiative OSI MIT License: http://opensource.org/licenses/mit-license.php
+ * @changlog:	www.colourpad.com/framework/changelog.txt
+ 
+ */
+
+/*------------------------------------*\
+   CONTENTS
+\*------------------------------------*/
+
+/*
+ -- RESET
+ -- TEXT
+ -- GRID
+ -- RESPONSIVE
+ -- EXTRAS
+*/
+
+
+/*------------------------------------*\
+   $RESET
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+:focus {outline: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+/*------------------------------------*\
+   $TEXT
+\*------------------------------------*/
+
+body {font: 0.8125em/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif; color: #5A554E;}
+strong {color: #333;}
+
+/*Links*/
+a {text-decoration: none; outline: none;}
+a:hover {text-decoration: underline;}
+a:active {outline: none;}
+a:focus {outline: 1px dotted;}
+a[rel="external"] {background: url(http://colourpad.com/framework/images/external.png) 99% 40% no-repeat; padding-right: 15px;} /* Add rel="external" to mark external links appropriately*/
+
+/*List Syles*/
+ol {list-style: decimal;} ul {list-style: disc;} li {margin-left: 1.5%;}
+
+/*Headings*/
+h1 {font-size: 1.5625em;} h2 {font-size: 1.4375em;} h3 {font-size: 1.3125em;} h4 {font-size: 1.1875em;} h5 {font-size: 1.0625em;} h6 {font-size: 0.9375em;}
+
+/*Spacing*/
+._spacer {height: 20px;}
+._spacerBig {height: 40px;}
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset {margin-bottom: 20px;}
+
+/*------------------------------------*\
+   $GRID
+\*------------------------------------*/
+
+.colourpad {margin: 0 auto; max-width:960px;}
+
+.pad1, .pad2, .pad3, .pad4, .pad5, .pad6, .pad7, .pad8, .pad9, .pad10, .pad11, .pad12 {
+	display: inline;
+	float: left;
+	margin: 0px 10px;
+}
+
+.pad1 {width: 60px;}
+.pad2 {width: 140px;}
+.pad3 {width: 220px;}
+.pad4 {width: 300px;}
+.pad5 {width: 380px;}
+.pad6 {width: 460px;}
+.pad7 {width: 540px;}
+.pad8 {width: 620px;}
+.pad9 {width: 700px;}
+.pad10 {width: 780px;}
+.pad11 {width: 860px;}
+.pad12 {width: 940px;}
+
+._first {margin-left: 0;}
+._last {margin-right: 0;}
+
+
+/*------------------------------------*\
+   $RESPONSIVE
+\*------------------------------------*/
+
+/*Auto fluid layout for screens below 960px*/
+@media all and (max-width: 960px) {
+	.colourpad._responsive .pad1, .colourpad._responsive .pad2, .colourpad._responsive .pad3, .colourpad._responsive .pad4, .colourpad._responsive .pad5, .colourpad._responsive .pad6,
+	.colourpad._responsive .pad7, .colourpad._responsive .pad8, .colourpad._responsive .pad9, .colourpad._responsive .pad10, .colourpad._responsive .pad11, .colourpad._responsive .pad12 {margin: 0 1%;}
+	
+	.colourpad._responsive .pad1 {width: 6.333%;}
+	.colourpad._responsive .pad2 {width: 14.665%;}
+	.colourpad._responsive .pad3 {width: 23%;}
+	.colourpad._responsive .pad4 {width: 31.333%;}
+	.colourpad._responsive .pad5 {width: 39.666%;}
+	.colourpad._responsive .pad6 {width: 48%;}
+	.colourpad._responsive .pad7 {width: 56.333%;}
+	.colourpad._responsive .pad8 {width: 64.666%;}
+	.colourpad._responsive .pad9 {width: 73%;}
+	.colourpad._responsive .pad10 {width: 81.333%;}
+	.colourpad._responsive .pad11 {width: 89.666%;}
+	.colourpad._responsive .pad12 {width: 98%;}
+	
+	.colourpad._responsive:not(._imgResponsiveOff) img:not(._important) {width:100%; height:auto;}
+	
+	.pad1, .pad2, .pad3, .pad4, .pad5, .pad6, .pad7, .pad8, .pad9, .pad10, .pad11, .pad12, img {
+		transition: all .2s linear; -o-transition: all .2s linear; -moz-transition: all .2s linear; -webkit-transition:all .2s linear;
+	}
+}
+
+
+@media all and (max-width: 740px) {
+	.colourpad._responsive .pad1:not(._important) {display: none;}
+		.colourpad._responsive .pad1._important {width: 98%}
+	.colourpad._responsive .pad2:not(._important) {display: none;}
+		.colourpad._responsive .pad2._important {width: 98%}
+	.colourpad._responsive .pad3:not(._important) {display: none;}
+		.colourpad._responsive .pad3._important {width: 98%}
+	
+	.colourpad._responsive .pad11 {width: 98%;}
+	.colourpad._responsive .pad10 {width: 98%;}
+	.colourpad._responsive .pad9 {width: 98%;}
+	.colourpad._responsive .pad8 {width: 98%;}
+	.colourpad._responsive .pad7 {width: 98%;}
+}
+
+@media all and (max-width: 520px) {
+	.colourpad._responsive .pad4:not(._important) {display: none;}
+		.colourpad._responsive .pad4._important {width: 98%}
+	.colourpad._responsive .pad5:not(._important) {display: none;}
+		.colourpad._responsive .pad5._important {width: 98%}
+}
+
+@media all and (max-width: 320px) {
+	.colourpad._responsive .pad6:not(._important) {display: none;}	
+		.colourpad._responsive .pad6._important {width: 98%}
+}
+
+
+/*------------------------------------*\
+   $EXTRAS
+\*------------------------------------*/
+
+/*Grid image overlay to position correctly*/
+._grid {background: url(http://colourpad.com/framework/images/grid.png) top left repeat-y; overflow:hidden;}
+
+/*Appmode*/
+._appMode {max-width: 100%}
