@@ -14,3 +14,8 @@ Advanced CSS3 logic to help determine best way to show an object.
 All of this is available in a few little KB's of CSS. I built this to scratch my itch, and maybe it'll scratch yours too.
 
 **Currently there's no documentation or cheat sheet available, but I am working on these! The download is mainly available for internal projects or for people I know. I'm looking to expand this soonish.
+
+MORE
+=====================
+
+More here: http://tinybigideas.com/web-applications/colourpad-css-framework/
