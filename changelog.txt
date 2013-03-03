@@ -1,0 +1,122 @@
+ 
+ ,---.     |                                 |
+ |    ,---.|    ,---..   .,---.,---.,---.,---|
+ |    |   ||    |   ||   ||    |   |,---||   |
+ `---'`---'`---'`---'`---'`    |---'`---^`--
+                               |    
+ * @project:	CSS Framework
+ * @version:	2.3 #Foxglove - 01/02/12
+ * @author:		Craig Thomas - www.colourpad.com
+ * @project:	www.tinybigideas.com/web-applications/colourpad-css-framework/
+ * @license:	Colourpad CSS Framework by Craig Thomas is licensed under a Open Source Initiative OSI MIT License: http://opensource.org/licenses/mit-license.php
+ * @Changlog:	www.colourpad.com/framework/changelog.txt
+ 
+2.3 - 01/02/12 #Foxglove
+-----------------------------------------------
+ * Removed CSS3 elements (.roundCorners_cp and .resize_cp)
+ * Removed optimalText_cp
+ * Generally cleaned up code
+ * Removed used of _cp instead using prefix _ i.e. ._grid instead of .grid_cp
+ * Responsive transitions added
+ * Added: Use of ._important to dictate items which should not be hidden on resolution change
+ * Added: Responsive behaviour disabled by default, you need to add ._responsive to the main .colourpad to enable
+ * Added option to remove images from being affected by responsive img 100% using ._important on individual images or _imgResponsiveOff on .colourpad
+ 
+
+2.2.1 - 19/09/11
+-----------------------------------------------
+ * Removed auto-updating
+ * Removed clearfix
+ 
+
+2.2 - 24/06/11 #Enthusiasm
+-----------------------------------------------
+ * Removed .colourpadFluid and .colourpadStrict in favour of a more simplistic .colourpad which is strict until screen drops below 960px then it'll switch to fluid automatically
+ * Reset CSS cleaned up for non-used elements i.e. blockquotes
+ * Two mobile modes - either .manualMobMode_cp or .autoMobMode_cp - manual you specify which pad you want to keep and expand where auto will hide all =< .pad6 and expand all > .pad6
+ * Added .manualMobModeReverse_cp - opposite to manualMobMode_cp by hiding all pads with .mob_cp rather than keeping and expanding
+ * Automatically apply .fluidImage_cp to all images when .autoMobMode_cp on
+
+
+2.1.1 - 22/06/11
+-----------------------------------------------
+ * Fixed grip_cp layout - was slightly ofset (colourpadStrict only)
+ * Added fluidImage to resize images fluidily
+ * Changed license to Open Source Initiative OSI MIT License: http://opensource.org/licenses/mit-license.php
+ 
+ 
+2.1 - 20/06/11 #Daffodil
+-----------------------------------------------
+ * Removed all tab queries for simplication (Only aimed at mobiles now)
+ * Removed <hr> style for simplication
+ * Editted colourpad-s in autoMob_cp to % rather than px 
+ * Renamed colourpad-s and -f to colourpadStrict and colourpadFluid
+ * Override style added as colourpad.css and @import of framework (remote updating of framework)
+ * Framework CSS images moved to /framework/images/
+ * Removed CSS3 mod boxShadow_cp
+ * Added classes to colourpad.css for intellisense
+ * Added Creative Commons Attribution-ShareAlike 3.0 Unported License
+ * Moved changelog to its own changelog.txt
+ * Cleaned up version numbers
+ * Added transparency to grid overlay for dark background sites
+	 
+	 
+2.0 - 15/12/10 #Carnation
+-----------------------------------------------
+ * Removed/Renamed any possible conflicts:
+     * Renamed .spacer and .spacerbig to .spacer_cp and .spacerBig_cp
+     * Renamed .alpha and .omega to .first_cp and .last_cp
+     * Renamed .clearfix to .clearfix_cp
+     * Renamed .text to .optimalText_cp
+     * Removed .leftalign
+     * Renamed .app to .appMode_cp
+     * Renamed all .appearXXX, .hideXXX and .expandXXX elements to .appearMob_cp etc
+     * Renamed .grid to .grid_cp
+ * Added CSS3 effects:
+     * .roundCorners_cp (Round corners)
+     * .boxShadow_cp (Box Shadows)
+     * .resize_cp (Resize element)
+ * Removed all Wide queries for simplification
+ * Automatic mob mode: Use .autoMob_cp on main .colourpad-f or -s then specify pads with .mob_cp (Auto hides all elements without mob_cp and expands)
+	 
+
+1.5.7 - 17/09/10
+-----------------------------------------------
+ * Added colourpad-f and colourpad-s for fluid and strict
+ * Added left align for non-centred sites (colourpad-f left)
+	 
+
+1.5.6 - 16/09/10
+-----------------------------------------------
+ * Fixed/cleaned up media queries
+ * Added .grid to provide visual help when designing
+ 	
+
+1.5.5 - 15/09/10
+-----------------------------------------------
+ * Added .spacerbig for double spacer
+ * Added mob, tab and wide specification to media queries
+ * Changed autoapp to wide in media queries
+ * Renamed .app to .appmode
+	 
+
+1.5 - 14/09/10 #Buttercup
+-----------------------------------------------
+ * Created fluid layout, converted px to % and em
+ * Added media queries (hide, expand and appear)
+	
+
+1.1 - 13/08/10 
+-----------------------------------------------
+ * Reformatted and cleaned layout (More semantic)
+ * Specified font colour for normal and strong
+ * Added link styling, remove outlines unless focused
+ * Added external link styling, use rel="external" on links
+ * Added text class to give optimal line length use .text
+	 
+
+1.0 - 26/07/10 #Asparagus
+-----------------------------------------------
+ * Working grid code with basic features	
+
+
